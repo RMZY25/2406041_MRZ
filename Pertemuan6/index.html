@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 6 - User Directory App</title>
+    <!-- Font Inter & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <main class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="badge-tag"><i class="fa-solid fa-bolt"></i> Modul 6 Praktikum</div>
+            <h2>Daftar Pengguna</h2>
+            <p class="subtitle">Eksplorasi Asynchronous JavaScript & Fetch API dengan Antarmuka Modern</p>
+        </header>
+
+        <!-- Control Bar (Button & Search) -->
+        <section class="controls-section">
+            <div class="actions-bar">
+                <button id="btnFetch" class="btn-primary">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Muat Data Pengguna</span>
+                </button>
+            </div>
+
+            <!-- Fitur Tambahan: Live Search Bar -->
+            <div class="search-box hidden" id="searchBox">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Cari nama, email, atau perusahaan...">
+            </div>
+        </section>
+
+        <!-- Status Message Indicator -->
+        <div id="statusMessage" class="status-msg">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Klik tombol di atas untuk memuat data pengguna.</span>
+        </div>
+
+        <!-- User Cards Container -->
+        <div id="userList" class="user-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
